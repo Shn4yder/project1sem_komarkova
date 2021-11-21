@@ -6,15 +6,12 @@
 
 a = input('Введите число A:  ')
 
-while type(a) != float:                                   # обработка исключений для A
+while type(a) != int:                                   # обработка исключений для A
     try:
-        a = float(a)
+        a = int(a)
     except ValueError:
         print('Вы ввели нецелое число A')
         a = input('Введите число A: ')
-    if a < 1:
-        print('Число A не должно быть меньше 1')
-        n = input('Введите ненулевое значение A: ')
 
 
 if a > 1:
