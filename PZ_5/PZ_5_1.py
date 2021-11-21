@@ -3,7 +3,7 @@
 """
 
 
-def generator(a, b, c, d):
+def generator(a, b, c, d):                                 # реализация функции-генератора 
     number = str(a) + str(b) + str(c) + str(d)
     if (a == b) or (a == c) or (a == d ) or (b == c) or (b == d) or (c == d):
         ravenstvo = 'В Вашем числе есть одинаковые цифры'
@@ -19,7 +19,8 @@ num3 = int(input('Введите третью цифру  '))
 num4 = int(input('Введите четвертую цифру  '))
 
 
-generator(num1, num2, num3, num4)
+generator(num1, num2, num3, num4)                         # использование функции от введенных данных
+
 
 
 
