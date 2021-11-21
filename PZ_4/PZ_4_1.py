@@ -5,7 +5,7 @@
 n = input('Введите число N:  ')
 
 
-while type(n) != int:
+while type(n) != int:           # обработка исключений для n 
     try:
          n = int(n)
     except ValueError:
@@ -13,7 +13,7 @@ while type(n) != int:
         n = input('Введите число N: ')
 
 
-if n != 0:
+if n > 0:
     summa = 0
     while n > 0:
         summa = summa + 1/n
