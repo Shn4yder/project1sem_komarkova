@@ -4,7 +4,7 @@
 
 
 def generator(a, b, c, d):                                 # реализация функции-генератора 
-    number = str(a) + str(b) + str(c) + str(d)
+    number = a * 1000 + b * 100 + c * 10 + d
     if (a == b) or (a == c) or (a == d ) or (b == c) or (b == d) or (c == d):
         ravenstvo = 'В Вашем числе есть одинаковые цифры'
     else:
