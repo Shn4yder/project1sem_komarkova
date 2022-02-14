@@ -9,24 +9,21 @@ root.title('Четные/ нечетные элементы списка')
 root.geometry('600x200+400+200')
 
 def obrabotchik(event):
-    list = [int(i) for i in l.get().split(', ')]
-    print(list)
+    list = [int(i) for i in l.get().split(',')]
 
     list_chet = []
     list_nechet = []
 
-    for element in list:  # перебор элементов. Сбор четных
+    for element in list:  # перебор элементов
         if element % 2 == 0:
             list_chet.append(element)
-
-    for element in list[::-1]:  # перебор элементов. Сбор нечетных с конца
-        if element % 2 == 1:
+        else:
             list_nechet.append(element)
 
-    chet['text'] = f"Четные элемениы Вашего списка: {list_chet}"
-    nechet['text'] = f"Нечетные элементы Вашего списка с конца: {list_nechet}"
+    chet['text'] = f"Четные элементы списка: {str(list_chet).replace('[', '').replace(']', '')}"
+    nechet['text'] = f"Нечетные элементы списка с конца: {str(list_nechet[::-1]).replace('[', '').replace(']', '')}"
 
-Label(text="Введите список").grid(row=0, column=0)
+Label(text="Введите список через запятую без пробелов").grid(row=0, column=0)
 l = Entry()
 l.grid(row=0, column=1)
 
