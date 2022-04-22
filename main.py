@@ -1,16 +1,21 @@
-# This is a sample Python script.
+import module
+import figures
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# module.get_set()
 
+# module.get_txt()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# print(module.list_doc.doc)
 
+print(module.file_doc.doc)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# print(dir(module))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(figures.circle_area())
+print(figures.triangle_area())
+print(figures.square_area())
+
+"""
+    Таким образом, если изменить имя пакета figure на другое и импортирорвать библиотеку с другим именем, то результат 
+    будет прежним - нигде явно не использовалось имя figure.
+"""
